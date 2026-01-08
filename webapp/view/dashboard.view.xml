@@ -1,0 +1,52 @@
+<mvc:View
+    controllerName="app01.controller.home_view"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+>
+    <Page
+        id="page2"
+        title="{i18n>title}"
+    >
+        <Toolbar id="_IDGenToolHeader2">
+            <Button
+                id="_IDGenButton9"
+                icon="sap-icon://menu2"
+                type="Transparent"
+            />
+            <ToolbarSpacer id="_IDGenToolbarSpacer6" />
+            <Text
+                id="_IDGenText5"
+                text="Login Page"
+            />
+            <ToolbarSpacer id="_IDGenToolbarSpacer7" />
+            <Button
+                id="_IDGenButton8"
+                text="Hi, {/username}"
+                type="Transparent"
+            />
+        </Toolbar>
+        <Text
+            id="_IDGenText21"
+            text="{/password}"
+        />
+
+        <footer>
+            <Bar id="_IDGenBar11">
+                <contentLeft>
+                    <Text
+                        id="_IDGenText31"
+                        text="copyright@SanaCommerce"
+                    />
+                </contentLeft>
+                <contentRight>
+                    <Text
+                        id="_IDGenText4"
+                        text="SanaCommerce"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

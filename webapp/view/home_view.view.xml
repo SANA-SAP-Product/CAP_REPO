@@ -1,0 +1,85 @@
+<mvc:View
+    controllerName="app01.controller.home_view"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <tnt:ToolHeader id="_IDGenToolHeader">
+            <Button
+                id="_IDGenButton"
+                icon="sap-icon://menu2"
+                type="Transparent"
+            />
+            <ToolbarSpacer id="_IDGenToolbarSpacer" />
+            <Text
+                id="_IDGenText1"
+                text="Login Page"
+            />
+            <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+            <Button
+                id="_IDGenButton1"
+                text="Hi Admin"
+            />
+        </tnt:ToolHeader>
+        <Text
+            id="_IDGenText"
+            text="Hellow World!"
+        />
+
+        <content>
+            <VBox id="_IDGenVBox" class="custform" fitContainer="true">
+                <form:SimpleForm
+                    id="_IDGenSimpleForm1"
+                    title="Login"
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    xmlns:form="sap.ui.layout.form"
+                >
+                    <Label
+                        id="_IDGenLabel1"
+                        text="Username :"
+                    />
+                    <Input
+                        id="input1"
+                        xmlns="sap.m"
+                        placeholder="Enter Your User Name"
+                    />
+                    <Label
+                        id="_IDGenLabel2"
+                        text="Password :"
+                    />
+                    <Input
+                        id="input2"
+                        type="Password"
+                        tooltip="password field"
+                        xmlns="sap.m"
+                        placeholder="Enter Your Password"
+                    />
+                <Button id="_IDGenButton2" text="Login" type="Emphasized" press="loginButton()" />
+                </form:SimpleForm>
+            </VBox>
+        </content>
+
+        <footer>
+            <Bar id="_IDGenBar">
+                <contentLeft>
+                    <Text
+                        id="_IDGenText2"
+                        text="copyright@SanaCommerce"
+                    />
+                </contentLeft>
+                <contentRight>
+                    <Text
+                        id="_IDGenText3"
+                        text="Sana Commerce"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
