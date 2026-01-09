@@ -1,0 +1,92 @@
+
+<mvc:View
+    controllerName="app01.controller.dashboard"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+>
+    <Page
+        id="dashboardPage"
+        title="{i18n>dashboardTitle}"
+    >
+        <tnt:ToolHeader id="toolHeaderMain">
+            <Button
+                id="menuButton"
+                icon="sap-icon://menu"
+                type="Transparent"
+            />
+            <ToolbarSpacer id="toolbarSpacerLeft" />
+            <Text
+                id="headerText"
+                text="Welcome Page"
+            />
+            <ToolbarSpacer id="toolbarSpacerRight" />
+            <Button
+                id="userButton"
+                text="Hello User"
+            />
+        </tnt:ToolHeader>
+
+        <Text
+            id="welcomeText"
+            text="Welcome to SAPUI5!"
+        />
+
+        <content>
+            <VBox id="loginVBox" class="customForm" fitContainer="true">
+                <form:SimpleForm
+                    id="loginForm"
+                    title="User Login"
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    xmlns:form="sap.ui.layout.form"
+                >
+                    <Label
+                        id="usernameLabel"
+                        text="Username:"
+                    />
+                    <Input
+                        id="usernameInput"
+                        placeholder="Enter Username"
+                    />
+                    <Label
+                        id="passwordLabel"
+                        text="Password:"
+                    />
+                    <Input
+                        id="passwordInput"
+                        type="Password"
+                        tooltip="Enter your password"
+                        placeholder="Enter Password"
+                    />
+                    <Button
+                        id="submitLoginButton"
+                        text="Sign In"
+                        type="Emphasized"
+                        press="onLoginPress"
+                    />
+                </form:SimpleForm>
+            </VBox>
+        </content>
+
+        <footer>
+            <Bar id="footerBar">
+                <contentLeft>
+                    <Text
+                        id="footerLeftText"
+                        text="© 2026 MyCompany"
+                    />
+                </contentLeft>
+                <contentRight>
+                    <Text
+                        id="footerRightText"
+                        text="Powered by SAPUI5"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
+
+<!-- new add -->
