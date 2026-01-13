@@ -33,7 +33,7 @@ sap.ui.define([
       // this._oRouter.getRoute("detail").attachPatternMatched(this._onRouteMatched, this);
 
       // Example: read i18n safely (if the component has it)
-     // this._oI18n = this.getOwnerComponent?.().getModel?.("i18n");
+     this._oI18n = this.getOwnerComponent?.().getModel?.("i18n");
 
       // Optional: focus username on first render
       this.getView().addEventDelegate({
