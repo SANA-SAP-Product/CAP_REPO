@@ -1,0 +1,57 @@
+
+<mvc:View
+    controllerName="app01.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <App id="app">
+        <Page id="pagead" title="Contact Us">
+            <content>
+                <VBox id="_IDGenVBox1" class="sapUiResponsiveContentPadding sapUiSmallMargin">
+                    <!-- Info strip (shown when there are validation issues) -->
+                    <MessageStrip id="msgStrip"
+                                  text="Please fix the highlighted errors."
+                                  type="Error"
+                                  showIcon="true"
+                                  visible="false"/>
+
+                    <!-- Name -->
+                    <Label id="_IDGenLabel3" text="Name" required="true"/>
+                    <Input id="inpName" placeholder="Your full name"
+                           liveChange=".onLiveValidate"/>
+
+                    <!-- Email -->
+                    <Label id="_IDGenLabel4" text="Email" required="true"/>
+                    <Input id="inpEmail" type="Email" placeholder="you@example.com"
+                           liveChange=".onLiveValidate"/>
+
+                    <!-- Phone (optional) -->
+                    <Label id="_IDGenLabel5" text="Phone"/>
+                    <Input id="inpPhone" type="Tel" placeholder="Optional, e.g. +94 77 123 4567"
+                           liveChange=".onLiveValidate"/>
+
+                    <!-- Subject -->
+                    <Label id="_IDGenLabel6" text="Subject" required="true"/>
+                    <Input id="inpSubject" placeholder="How can we help?"
+                           liveChange=".onLiveValidate"/>
+
+                    <!-- Message -->
+                    <Label id="_IDGenLabel7" text="Message" required="true"/>
+                    <TextArea id="inpMessage" rows="6" placeholder="Please describe your request"
+                              liveChange=".onLiveValidate"/>
+
+                    <!-- Agree -->
+                    <CheckBox id="chkAgree" text="I agree to the privacy policy" select=".onLiveValidate"/>
+
+                    <!-- Actions -->
+                    <HBox id="_IDGenHBox" justifyContent="End" class="sapUiSmallMarginTop">
+                        <Button id="_IDGenButton3" text="Reset" press=".onReset"/>
+                        <Button id="_IDGenButton4" text="Submit" type="Emphasized" press=".onSubmit"/>
+                    </HBox>
+                </VBox>
+            </content>
+        </Page>
+    </App>
+</mvc:View>
+
