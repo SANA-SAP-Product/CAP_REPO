@@ -7,7 +7,7 @@ sap.ui.define([
   "sap/ui/core/BusyIndicator"
 ], function (Controller, MessageToast, MessageBox, JSONModel, BusyIndicator) {
   "use strict";
-
+// +UA changes test
   return Controller.extend("app01.controller.Detail", {
     /**
      * Lifecycle hook: onInit
