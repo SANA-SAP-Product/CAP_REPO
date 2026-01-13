@@ -1,0 +1,53 @@
+
+<mvc:View
+    controllerName="app01.controller.home_view"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+>
+    <Page
+        id="pageLogin"
+        title="{i18n>title}"
+    >
+        <Toolbar id="toolbarHeader">
+            <Button
+                id="btnMenu"
+                icon="sap-icon://menu2"
+                type="Transparent"
+            />
+            <ToolbarSpacer id="spacerLeft" />
+            <Text
+                id="txtPageTitle"
+                text="Login Page"
+            />
+            <ToolbarSpacer id="spacerRight" />
+            <Button
+                id="btnUserGreeting"
+                text="Hi, {/username}"
+                type="Transparent"
+            />
+        </Toolbar>
+        <Text
+            id="txtPassword"
+            text="{/password}"
+        />
+
+        <footer>
+            <Bar id="footerBar">
+                <contentLeft>
+                    <Text
+                        id="txtCopyright"
+                        text="copyright@SanaCommerce"
+                    />
+                </contentLeft>
+                <contentRight>
+                    <Text
+                        id="txtCompany"
+                        text="SanaCommerce"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
