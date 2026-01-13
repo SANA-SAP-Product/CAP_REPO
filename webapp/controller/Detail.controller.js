@@ -147,6 +147,7 @@ sap.ui.define([
      */
     onMenuPress: function () {
       MessageToast.show("Menu clicked.");
+      MessageToast.show("You logged in.");
     },
 
     onUserPress: function () {
